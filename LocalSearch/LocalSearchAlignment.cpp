@@ -29,7 +29,7 @@ int score(char a, char b)
 
 int calculateTotalScore(string dna1, string dna2, int size){
     int totalScore = 0;
-    for (int i = 0; i < size; i++){
+    for (int i = 0; i <= size; i++){
         totalScore += score(dna1[i], dna2[i]);
     }
     return totalScore;
