@@ -49,6 +49,7 @@ int main(){
     cin >> dnaA;
     cin >> dnaB;
 
+
     vector <string> allSubsDnaA = findAllSubstrings(dnaA,n);
     vector <string> allSubsDnaB = findAllSubstrings(dnaB,m);
 

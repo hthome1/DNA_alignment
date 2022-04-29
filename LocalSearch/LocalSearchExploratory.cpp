@@ -115,12 +115,12 @@ int main(){
             // cout << "A sequencia do dnaA eh " <<dnaAsub << endl;
 
             current_score = calculateTotalScore(dnaAsub,dnaBsub,k);
-            cout << current_score << endl;
-            if (current_score == 0){
-                cout << " -------------" << endl;
-                cout << dnaAsub << endl;
-                cout << dnaBsub << endl;
-            }
+            // cout << current_score << endl;
+            // if (current_score == 0){
+            //     cout << " -------------" << endl;
+            //     cout << dnaAsub << endl;
+            //     cout << dnaBsub << endl;
+            // }
             if (current_score >= max_score){
                 max_score = current_score;
                 max_scoreA = dnaAsub;
@@ -132,7 +132,7 @@ int main(){
         stop ++;
     }
 
-    cout <<"O score maximo eh " << max_score << endl;
+    cout << max_score << endl;
     cout <<"A sequencia motrix eh "<< max_scoreA << endl;
     cout <<"A sequencia motrix eh "<< max_scoreB << endl;
 }
