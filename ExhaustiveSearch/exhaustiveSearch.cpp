@@ -6,6 +6,7 @@
 #include <fstream>
 #include <random>
 #include <string>
+#include <omp.h>
 using namespace std;
 
 
@@ -42,6 +43,7 @@ vector<string> findAllSubstrings (string A,int size){
 
 
 int main(){
+
     string dnaA,dnaB;
     int n,m;
     cin >> n;
@@ -76,7 +78,6 @@ int main(){
     cout << maxScore << endl;
     cout << maxDnaA << endl;
     cout << maxDnaB << endl;
-
 
     return 0;
 }
