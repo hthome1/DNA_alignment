@@ -20,7 +20,7 @@ struct scoreMatch
 {
     __host__ __device__
 
-        double operator()(char &a, char &b) {
+        double operator()(const char &a, const char &b) {
             if (a==b){
                 return 2;
             }else{
